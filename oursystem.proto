@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message DataInput {
+    int32 data = 1;
+}
+
+message DataOutput {
+    string data = 1;
+}
+
+service OurSystem {
+    rpc OurFunction(DataInput) returns (DataOutput) {};
+}
